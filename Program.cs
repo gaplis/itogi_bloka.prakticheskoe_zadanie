@@ -19,9 +19,9 @@ int FindAmountWordsInArray(string[] array, int lengthWord)
     return amount;
 }
 
-string[] SortedArray(string[] array, int count, int lengthWord)
+string[] SortedArray(string[] array, int amount, int lengthWord)
 {
-    string[] newArray = new string[count];
+    string[] newArray = new string[amount];
     int j = 0;
     for (int i = 0; j < newArray.Length; i++)
     {

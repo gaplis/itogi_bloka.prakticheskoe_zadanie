@@ -43,14 +43,14 @@ void PrintArray(string[] array, int lengthWord)
     else
     {
         Console.Write($"Строки меньше, либо равные {lengthWord} символам: ");
-        Console.WriteLine(String.Join(", ", array));
+        Console.WriteLine($"[{String.Join(", ", array)}]");
     }
 }
 
 void PrintTask(string[] array, int lengthWord)
 {
     Console.Write("Заданный массив: ");
-    Console.WriteLine(String.Join(", ", array));
+    Console.WriteLine($"[{String.Join(", ", array)}]");
     int amountWords = FindAmountWordsInArray(array, lengthWord);
     string[] sortArray = SortedArray(array, amountWords, lengthWord);
     PrintArray(sortArray, lengthWord);

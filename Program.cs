@@ -5,3 +5,17 @@
 // [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
+
+int FindAmountWordsInArray(string[] array)
+{
+    int amount = 0;
+    int wordLength = 3;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= wordLength)
+        {
+            amount++;
+        }
+    }
+    return amount;
+}
